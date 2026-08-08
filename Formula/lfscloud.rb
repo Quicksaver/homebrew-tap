@@ -1,19 +1,19 @@
 class Lfscloud < Formula
   desc "Git LFS-compatible server and CLI for user-controlled storage"
   homepage "https://github.com/Quicksaver/lfs-cloud"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   if OS.mac?
-    url "https://github.com/Quicksaver/lfs-cloud/releases/download/v0.2.4/lfscloud-v0.2.4-macos-arm64.tar.gz"
-    sha256 "391ef2ddf09002c0f0ad48e8bc03beec8cfd9ce62b9f85a646a1c54c4b105410"
+    url "https://github.com/Quicksaver/lfs-cloud/releases/download/v0.2.5/lfscloud-v0.2.5-macos-arm64.tar.gz"
+    sha256 "169ae7dadf371f80c989f0f91b4f1454a90bff5159d159309954525027f55599"
     depends_on arch: :arm64
   elsif Hardware::CPU.arm?
-    url "https://github.com/Quicksaver/lfs-cloud/releases/download/v0.2.4/lfscloud-v0.2.4-linux-arm64-musl.tar.gz"
-    sha256 "96c50e2b16437000bb17c08957079bf205d4190ebf68e4c2223f75b7e44bd72c"
+    url "https://github.com/Quicksaver/lfs-cloud/releases/download/v0.2.5/lfscloud-v0.2.5-linux-arm64-musl.tar.gz"
+    sha256 "0a091631f3b68941b1c66ec33d1f819f37a4bfeddfd12146dd30395f72cb325f"
   else
-    url "https://github.com/Quicksaver/lfs-cloud/releases/download/v0.2.4/lfscloud-v0.2.4-linux-x86_64-musl.tar.gz"
-    sha256 "52aede09dcc38a1f60c73d1c07c5f679cb6feba602324ade17d9adf67898b0bc"
+    url "https://github.com/Quicksaver/lfs-cloud/releases/download/v0.2.5/lfscloud-v0.2.5-linux-x86_64-musl.tar.gz"
+    sha256 "85d43fd330f8274e0662b6d903b260fb0d2e38ac40ba75866ff66d94e78e90a2"
   end
 
   def install
